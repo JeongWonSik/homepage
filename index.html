@@ -8,13 +8,6 @@
 <body>
     <header id="headerWrap">
         <div id = "mainimg">
-            <div id="sliderWrap">
-                <ul id="sliderlist">
-                    <li class="slider1 on"><a href="#"></a></li>
-                    <li class="slider1 on"><a href="#"></a></li>
-                    <li class="slider1 on"><a href="#"></a></li>
-                </ul>
-            </div>
             <nav id="nav1">
             <ul>
                 <li><a href="#none"><img src="img/header/nav1_btn.png" alt=""></a></li>
@@ -24,7 +17,7 @@
             </ul>
             </nav>
             <section id="headersection">
-            <h1 id="TopLogo" class="hidden">네이쳐카인드</h1>
+            <h1 id="TopLogo"><a href="#" class="hidden">네이쳐카인드</a></h1>
             <nav id="nav2">
                 <ul>
                     <li><a href="#" class="navmain menu1">BRAND</a></li>
@@ -58,11 +51,43 @@
                 </ul>
             </nav>
         </section>
+        <div id="sliderWrap">
+            <ul id="sliderlist">
+                <li class="headerslider slider1 on"><a href="#"></a></li>
+                <li class="headerslider slider2"><a href="#"></a></li>
+                <li class="headerslider slider3"><a href="#"></a></li>
+            </ul>
+            <ul id="sliderbutton">
+                <li><a href="#" class="sliderbtn1 on"></a></li>
+                <li><a href="#" class="sliderbtn2"></a></li>
+                <li><a href="#" class="sliderbtn3"></a></li>
+            </ul>
+        </div>
         </div>
     </header>
     <main>
         <section id="newproductWrap">
             <h3>신상품</h3>
+            <dl>
+                <a href="#">
+                    <dt class="productimg"><img src="/img/newproduct/new1.jpg" alt="#신상1" width="200px"></dt>
+                    <dd class="productname">상품명</dd>
+                    <dd class="productinfo">설명</dd>
+                    <dd class="productprice">가격</dd>
+                </a>
+                <a href="#">
+                    <dt class="productimg"><img src="/img/newproduct/new1.jpg" alt="#신상1" width="200px"></dt>
+                    <dd class="productname">상품명</dd>
+                    <dd class="productinfo">설명</dd>
+                    <dd class="productprice">가격</dd>
+                </a>
+                <a href="#">
+                    <dt class="productimg"><img src="/img/newproduct/new1.jpg" alt="#신상1" width="200px"></dt>
+                    <dd class="productname">상품명</dd>
+                    <dd class="productinfo">설명</dd>
+                    <dd class="productprice">가격</dd>
+                </a>
+            </dl>
         </section>
         <section id="top10Wrap">
             <h3>TOP10</h3>
@@ -75,23 +100,76 @@
         </section>
     </main>
     <aside>
-        <div>
+        <div id="banner">
             <ul>
-                <li><a href="#">Logo</a></li>
-                <li><a href="#">최근 본 상품</a><ul>
-                    <li><a href="#">최근 본 상품 1</a></li>
-                    <li><a href="#">최근 본 상품 2</a></li>
-                    <li><a href="#">최근 본 상품 3</a></li>
-                    <li><a href="#">최근 본 상품 4</a></li>
-                </ul></li>
-                <li><a href="#">장바구니</a><ul>
-                    <li><a href="#">장바구니 담아 둔 상품1</a></li>
-                    <li><a href="#">장바구니 담아 둔 상품2</a></li>
-                    <li><a href="#">장바구니 담아 둔 상품3</a></li>
-                    <li><a href="#">장바구니 담아 둔 상품4</a></li>
-                </ul></li>
-                <li><a href="#">상담하기</a></li>
-                <li><a href="#">제일위로</a></li>
+                <li id="bannerlogo"><a href="#">Logo</a></li>
+                <li id="bannermenu1"><a href="#">최근 본 상품</a>
+                    <ul>
+                        <li><a href="#">최근 본 상품 1
+                            <dl>
+                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                <dd class="productname">제품명</dd>
+                                <dd class="productinfo">제품설명</dd>
+                            </dl>
+                        </a></li>
+                        <li><a href="#">최근 본 상품 2
+                            <dl>
+                                <dt class="productimg"><img src="" alt="최근 본 상품 사진2"></dt>
+                                <dd class="productname">제품명</dd>
+                                <dd class="productinfo">제품설명</dd>
+
+                            </dl>
+                        </a></li>
+                        <li><a href="#">최근 본 상품 3
+                            <dl>
+                                <dt class="productimg"><img src="" alt="최근 본 상품 사진3"></dt>
+                                <dd class="productname">제품명</dd>
+                                <dd class="productinfo">제품설명</dd>
+
+                            </dl>
+                        </a></li>
+                        <li><a href="#">최근 본 상품 4
+                            <dl>
+                                <dt class="productimg"><img src="" alt="최근 본 상품 사진4"></dt>
+                                <dt class="productname">제품명</dt>
+                                <dd class="productinfo">제품설명</dd>
+                            </dl>
+                        </a></li>
+                    </ul></li>
+                <li id="bannermenu2"><a href="#">장바구니</a>
+                    <ul>
+                        <li><a href="#">장바구니 담아 둔 상품1
+                            <dl>
+                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                <dd class="productname">제품명</dd>
+                                <dd class="productinfo">제품설명</dd>
+                            </dl>
+                        </a></li>
+                        <li><a href="#">장바구니 담아 둔 상품2
+                            <dl>
+                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                <dd class="productname">제품명</dd>
+                                <dd class="productinfo">제품설명</dd>
+                            </dl>
+                        </a></li>
+                        <li><a href="#">장바구니 담아 둔 상품3
+                            <dl>
+                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                <dd class="productname">제품명</dd>
+                                <dd class="productinfo">제품설명</dd>
+                            </dl>
+                        </a></li>
+                        <li><a href="#">장바구니 담아 둔 상품4
+                            <dl>
+                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                <dd class="productname">제품명</dd>
+                                <dd class="productinfo">제품설명</dd>
+                            </dl>
+                        </a></li>
+                    </ul>
+                </li>
+                <li id="bannermenu3"><a href="#">상담하기</a></li>
+                <li id="bannermenu4"><a href="#">제일위로</a></li>
             </ul>
         </div>
     </aside>

@@ -39,32 +39,55 @@ section { width: 100%; height: 100vh;}
 .slider2 a{ background-image: url(../img/header/main_img02.jpg);background-repeat: no-repeat;}
 .slider3 a{ background-image: url(../img/header/main_img03.jpg);background-repeat: no-repeat;}
 
+
+/*section 상품통일*/
+.nowname{font-weight: 600; font-size: 16px;}
+.nowinfo{ font-size: 12px;}
+.beforeprice {font-size: 14px;}
+.nowprice{font-size: 16px; font-weight: bold;}
 /*section1 신상*/
-#newproductWrap {width: 100%; height: 100vh;}
-#newproductWrap > dl {width: 250px; height: 250px; overflow: hidden;}
+#newproductpage {width: 100%; height: 100vh; position: relative;}
+#newproductpage h3 {position: absolute; top: 50px; left: calc(50% - 75px); font-size: 50px;}
+#newproductWrap {width: 1240px; height: 50vh; position: absolute; top: 150px; left: calc(50% - 600px);}
+#newproductlist { height: 410px; border: 1px solid #000; display: flex;}
+.newmenu {margin: 5px 20px; width: 270px; height: 410px; text-align: center; float: left;}
+.newnumbox {width: 50px; background: rgba(255, 0, 0, 0.6); color: white; float: left; line-height: 25px;}
+.newnum {width: 25px; height: 25px; font-weight: 1000; font-size: large;}
+.newmenu a li{ height: 380px; }
+.newmenu a li img{width: 268px; height: 248px;}
+
+/*section2 top 10*/
+#top10page{width: 100%; height: 100vh; position: relative;}
+#top10page h3 {position: absolute; top: 50px; left: calc(50% - 75px); font-size: 50px;}
+#top10Wrap { width: 1240px; height: 50vh; position: absolute; top: 150px; left: calc(50% - 600px);}
+#top10list { height: 410px; border: 1px solid #000; display: flex;}
+.top10menu {margin: 5px 20px; width: 270px; height: 410px; text-align: center; float: left;}
+.top10numbox {width: 50px; background: rgba(255, 0, 0, 0.6); color: white; float: left; line-height: 25px;}
+.top10num {width: 25px; height: 25px; font-weight: 1000; font-size: large;}
+.top10menu a li{ height: 380px; }
+.top10menu a li img{width: 268px; height: 248px;}
 
 
 
 
 
-
-#banner { width: 80px; height: 300px; background: #fff;
-    position:absolute; top: 500px; right: 0;
+#banner { width: 70px; height: 300px; background: #fff; border-radius: 10%;
+    position:absolute; top: 500px; right: 2px;
 }
 /*logo*/
-#bannerlogo { height: 60px; background-color: royalblue;}
+#bannerlogo { height: 60px; background-image: url(../img/banner/top_logo.png); background-repeat: no-repeat ;background-size: 70%; background-position: center;}
 #banner ul:nth-child(1) > li:nth-child(1) > a{display: block; text-indent: -9999px; height: 25%;}
 /*최근본상품*/
-#bannermenu1 {height: 60px; background-color: saddlebrown;}
-#bannermenu1 > a{display: block;}
+#bannermenu1 {height: 60px; background-image: url(../img/banner/see.jpg); background-repeat: no-repeat ;background-size: 100%; background-position-y: center;}
+#bannermenu1 > a{display: block; text-indent: -9999px;}
 #bannermenu1 > ul li {position: absolute; left: 100%;}
 /*장바구니*/
-#bannermenu2 {height: 60px; background: gold;}
-#bannermenu2 > a{display: block;}
+#bannermenu2 {height: 60px; background-image: url(../img/banner/cart1.jpg); background-repeat: no-repeat ;background-size: 70%; background-position: center;}
+#bannermenu2 > a{display: block; text-indent: -9999px;}
 #bannermenu2 > ul li {position: absolute; left: 100%;}
 /*상담하기*/
-#bannermenu3 {height: 60px; background: salmon;}
-#bannermenu3 a { display: block;}
+#bannermenu3 {height: 60px; background-image: url(../img/banner/문의하기.jpg); background-repeat: no-repeat ;background-size: 60%; background-position: center;}
+#bannermenu3 a { display: block; text-indent: -9999px;}
 /*상단이동*/
-#bannermenu4 {height: 60px; background: green;}
-#bannermenu4 a { display: block;}
+#bannermenu4 {height: 60px; background-image: url(../img/banner/top.jpg); background-repeat: no-repeat ;background-size: 60%; background-position: center;}
+#bannermenu4 a { display: block; text-indent: -9999px;}

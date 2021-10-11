@@ -1,180 +1,478 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <title>네이쳐카인드</title>
-    <link rel="stylesheet" href="css/common.css">
-</head>
-<body>
-    <header id="headerWrap">
-        <div id = "mainimg">
-            <nav id="nav1">
-            <ul>
-                <li><a href="#none"><img src="img/header/nav1_btn.png" alt=""></a></li>
-                <li><a href="#">주문조회</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">로그인</a></li>
-            </ul>
-            </nav>
-            <section id="headersection">
-            <h1 id="TopLogo"><a href="#" class="hidden">네이쳐카인드</a></h1>
-            <nav id="nav2">
-                <ul>
-                    <li><a href="#" class="navmain menu1">BRAND</a></li>
-                    <li><a href="#" class="navmain menu2">RNAK</a>
-                        <ul>
-                            <li><a href="#">24h</a></li>
-                            <li><a href="#">Week</a></li>
-                            <li><a href="#">Month</a></li>
-                    </ul></li>
-                    <li><a href="#" class="navmain menu3">PRODUCT</a>
-                        <ul>
-                            <li><a href="#">신상품</a></li>
-                            <li><a href="#">Skin</a></li>
-                            <li><a href="#">Cream</a></li>
-                            <li><a href="#">Sun</a></li>
-                            <li><a href="#">Cleanser</a></li>
-                        </ul></li>
-                    <li><a href="#" class="navmain menu4">EVENT</a>
-                        <ul>
-                            <li><a href="#">HotDeal</a></li>
-                            <li><a href="#">SNS</a></li>
-                            <li><a href="#">기획전</a></li>
-                            <li><a href="#">N+1</a></li>
-                        </ul></li>
-                        <li><a href="#" class="navmain menu5">CUSTOMER</a><ul>
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">Q&A</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">REVIEW</a></li>
-                    </ul></li>
-                </ul>
-            </nav>
-        </section>
-        <div id="sliderWrap">
-            <ul id="sliderlist">
-                <li class="headerslider slider1 on"><a href="#"></a></li>
-                <li class="headerslider slider2"><a href="#"></a></li>
-                <li class="headerslider slider3"><a href="#"></a></li>
-            </ul>
-            <ul id="sliderbutton">
-                <li><a href="#" class="sliderbtn1 on"></a></li>
-                <li><a href="#" class="sliderbtn2"></a></li>
-                <li><a href="#" class="sliderbtn3"></a></li>
-            </ul>
-        </div>
-        </div>
-    </header>
-    <main>
-        <section id="newproductWrap">
-            <h3>신상품</h3>
-            <dl>
-                <a href="#">
-                    <dt class="productimg"><img src="img/newproduct/new1.jpg" alt="#신상1" width="200px"></dt>
-                    <dd class="productname">상품명</dd>
-                    <dd class="productinfo">설명</dd>
-                    <dd class="productprice">가격</dd>
-                </a>
-                <a href="#">
-                    <dt class="productimg"><img src="img/newproduct/new2.jpg" alt="#신상1" width="200px"></dt>
-                    <dd class="productname">상품명</dd>
-                    <dd class="productinfo">설명</dd>
-                    <dd class="productprice">가격</dd>
-                </a>
-                <a href="#">
-                    <dt class="productimg"><img src="img/newproduct/new3.jpg" alt="#신상1" width="200px"></dt>
-                    <dd class="productname">상품명</dd>
-                    <dd class="productinfo">설명</dd>
-                    <dd class="productprice">가격</dd>
-                </a>
-            </dl>
-        </section>
-        <section id="top10Wrap">
-            <h3>TOP10</h3>
-        </section>
-        <section id ="hotdealWrap">
-            <h3>HotDeal</h3>
-        </section>
-        <section id ="reviewWrap">
-            <h3>REVIEW</h3>
-        </section>
-    </main>
-    <aside>
-        <div id="banner">
-            <ul>
-                <li id="bannerlogo"><a href="#">Logo</a></li>
-                <li id="bannermenu1"><a href="#">최근 본 상품</a>
+    <head>
+        <meta charset="UTF-8">
+        <title>네이쳐카인드</title>
+        <link rel="stylesheet" href="css/common.css">
+    </head>
+    <body>
+        <header id="headerWrap">
+            <div id="mainimg">
+                <nav id="nav1">
                     <ul>
-                        <li><a href="#">최근 본 상품 1
-                            <dl>
-                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
-                                <dd class="productname">제품명</dd>
-                                <dd class="productinfo">제품설명</dd>
-                            </dl>
-                        </a></li>
-                        <li><a href="#">최근 본 상품 2
-                            <dl>
-                                <dt class="productimg"><img src="" alt="최근 본 상품 사진2"></dt>
-                                <dd class="productname">제품명</dd>
-                                <dd class="productinfo">제품설명</dd>
-
-                            </dl>
-                        </a></li>
-                        <li><a href="#">최근 본 상품 3
-                            <dl>
-                                <dt class="productimg"><img src="" alt="최근 본 상품 사진3"></dt>
-                                <dd class="productname">제품명</dd>
-                                <dd class="productinfo">제품설명</dd>
-
-                            </dl>
-                        </a></li>
-                        <li><a href="#">최근 본 상품 4
-                            <dl>
-                                <dt class="productimg"><img src="" alt="최근 본 상품 사진4"></dt>
-                                <dt class="productname">제품명</dt>
-                                <dd class="productinfo">제품설명</dd>
-                            </dl>
-                        </a></li>
-                    </ul></li>
-                <li id="bannermenu2"><a href="#">장바구니</a>
-                    <ul>
-                        <li><a href="#">장바구니 담아 둔 상품1
-                            <dl>
-                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
-                                <dd class="productname">제품명</dd>
-                                <dd class="productinfo">제품설명</dd>
-                            </dl>
-                        </a></li>
-                        <li><a href="#">장바구니 담아 둔 상품2
-                            <dl>
-                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
-                                <dd class="productname">제품명</dd>
-                                <dd class="productinfo">제품설명</dd>
-                            </dl>
-                        </a></li>
-                        <li><a href="#">장바구니 담아 둔 상품3
-                            <dl>
-                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
-                                <dd class="productname">제품명</dd>
-                                <dd class="productinfo">제품설명</dd>
-                            </dl>
-                        </a></li>
-                        <li><a href="#">장바구니 담아 둔 상품4
-                            <dl>
-                                <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
-                                <dd class="productname">제품명</dd>
-                                <dd class="productinfo">제품설명</dd>
-                            </dl>
-                        </a></li>
+                        <li>
+                            <a href="#none"><img src="img/header/nav1_btn.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#">주문조회</a>
+                        </li>
+                        <li>
+                            <a href="#">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="#">로그인</a>
+                        </li>
                     </ul>
-                </li>
-                <li id="bannermenu3"><a href="#">상담하기</a></li>
-                <li id="bannermenu4"><a href="#">제일위로</a></li>
-            </ul>
-        </div>
-    </aside>
-    <footer>
-        
-    </footer>
-</body>
+                </nav>
+                <section id="headersection">
+                    <h1 id="TopLogo">
+                        <a href="#" class="hidden">네이쳐카인드</a>
+                    </h1>
+                    <nav id="nav2">
+                        <ul>
+                            <li>
+                                <a href="#" class="navmain menu1">BRAND</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navmain menu2">RNAK</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">24h</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Week</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Month</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="navmain menu3">PRODUCT</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">신상품</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Skin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cream</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sun</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cleanser</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="navmain menu4">EVENT</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">HotDeal</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SNS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">기획전</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">N+1</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="navmain menu5">CUSTOMER</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Q&A</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">REVIEW</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <div id="sliderWrap">
+                    <ul id="sliderlist">
+                        <li class="headerslider slider1 on">
+                            <a href="#"></a>
+                        </li>
+                        <li class="headerslider slider2">
+                            <a href="#"></a>
+                        </li>
+                        <li class="headerslider slider3">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                    <ul id="sliderbutton">
+                        <li>
+                            <a href="#" class="sliderbtn1 on"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="sliderbtn2"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="sliderbtn3"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="newproductpage">
+                <h3>신상품</h3>
+                <div id="newproductWrap">
+                    <ul id="newproductlist">
+                        <div class = "newmenu">
+                            <a href="#">
+                                <div class="newnumbox">
+                                <span class="newnum">new</span>
+                                </div>
+                                <li>
+                                    <img src="img/newproduct/new1.jpg" alt="new1">
+                                    <span class="nowname">블렉헤드 멜팅클리어 50ml 대용량<br></span>
+                                    <span calss="nowinfo">[특허성분] 피지+블랙헤드 제거 전용!<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">14,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "newmenu">
+                            <a href="#">
+                                <div class="newnumbox">
+                                <span class="newnum">new</span>
+                                </div>
+                                <li>
+                                    <img src="img/newproduct/new2.jpg" alt="new1">
+                                    <span class="nowname">매직 썬파우더 3.5g 자외선 차단 SPF50+/PA+++<br></span>
+                                    <span calss="nowinfo">[특허성분] 자외선차단+유분제거+피지흡착을 한번에!<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">16,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "newmenu">
+                            <a href="#">
+                                <div class="newnumbox">
+                                <span class="newnum">new</span>
+                                </div>
+                                <li>
+                                    <img src="img/newproduct/new3.jpg" alt="new3">
+                                    <span class="nowname">비타민크림 500g 대용량<br></span>
+                                    <span calss="nowinfo">100%전성분 그린등급! (미백주름개선+기미주근깨완화에도움+톤업+피부하얘지는법)<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">38,000</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "newmenu">
+                            <a href="#">
+                                <div class="newnumbox">
+                                <span class="newnum">new</span>
+                                </div>
+                                <li>
+                                    <img src="img/newproduct/new4.jpg" alt="new4">
+                                    <span class="nowname">센텔라스카연고 30g 대용량<br></span>
+                                    <span calss="nowinfo">[의약외품] 대용량 30g 출시! (상처치료연고/진정크림/수분보습/의약외품)<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">16,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "newmenu">
+                            <a href="#">
+                                <div class="newnumbox">
+                                <span class="newnum">new</span>
+                                </div>
+                                <li>
+                                    <img src="img/newproduct/new5.jpg" alt="new5">
+                                    <span class="nowname">리페어 네일 세럼 15ml<br></span>
+                                    <span calss="nowinfo">손톱 발톱 갈라짐 영양제 강화제<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">16,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "newmenu">
+                            <a href="#">
+                                <div class="newnumbox">
+                                <span class="newnum">new</span>
+                                </div>
+                                <li>
+                                    <img src="img/newproduct/new6.jpg" alt="new6">
+                                    <span class="nowname">아이브로우 픽싱 타투펜 눈썹 타투브로우<br></span>
+                                    <span calss="nowinfo">[강력한 착색 + 초간단 사옹볍] 최대 14일 지속 선착순 아이브로우 가이드 증정<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">16,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section id="top10page">
+                <h3>TOP10</h3>
+                <div id="top10Wrap">
+                    <ul id="top10list">
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                No.<span class="top10num">1</span>
+                                </div>
+                                <li>
+                                    <img src="img/top10/top1.jpg" alt="top1">
+                                    <span class="nowname">비타민크림 500g 대용량<br></span>
+                                    <span calss="nowinfo">100%전성분 그린등급! (미백주름개선+기미주근깨완화에도움+톤업+피부하얘지는법)<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">38,000</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                    No.<span class="top10num">2</span>
+                                    </div>
+                                <li>
+                                    <img src="img/top10/top2.jpg" alt="top2">
+                                    <span class="nowname">히알루론 만능크림 500g 대용량<br></span>
+                                    <span calss="nowinfo">100%전성분 그린등급! (수분+보습+영양+탄력+피부진정크림)<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">38,000</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                    No.<span class="top10num">3</span>
+                                    </div>
+                                <li>
+                                    <img src="img/top10/top3.jpg" alt="top3">
+                                    <span class="nowname">센탈레스카연고 30g 대용량<br></span>
+                                    <span calss="nowinfo">[의약외품] 대용량 30g 출시! (상처치료연고/진정크림/수분보습/의약외품)<br></span>
+                                    <del class="beforeprice">48,000</del>
+                                    <span class="nowprice">16,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                    No.<span class="top10num">4</span>
+                                    </div>
+                                <li>
+                                    <img src="img/top10/top4.jpg" alt="top4">
+                                    <span class="nowname">화이트닝 비타민C앰플 100ml 대용량<br></span>
+                                    <span calss="nowinfo">비타민폭탄 100,000ppm함유!(미백+주름개선+탄력에센스+세럼+스팟+기미잡티)<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">38,000</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                    No.<span class="top10num">5</span>
+                                    </div>
+                                <li>
+                                    <img src="img/top10/top5.jpg" alt="top5">
+                                    <span class="nowname">블렉헤드 멜팅클리어 50ml 대용량<br></span>
+                                    <span calss="nowinfo">[특허성분] 피지+블랙헤드 제거 전용!<br></span>
+                                    <del class="beforeprice">34,000</del>
+                                    <span class="nowprice">14,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                    No.<span class="top10num">6</span>
+                                    </div>
+                                <li>
+                                    <img src="img/top10/top6.jpg" alt="top6">
+                                    <span class="nowname">녹차 필링젤 150ml 대용량<br></span>
+                                    <span calss="nowinfo">전성분 EWG그린등급! (얼국각질제거/피부스케일링/코/피부각질제)<br></span>
+                                    <del class="beforeprice">25,000</del>
+                                    <span class="nowprice">9,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                    No.<span class="top10num">7</span>
+                                    </div>
+                                <li>
+                                    <img src="img/top10/top7.jpg" alt="top7">
+                                    <span class="nowname">아하 딥 클렌징오일 145ml<br></span>
+                                    <span calss="nowinfo">[2가지특허성분] 메이크업, 블랙헤드,피지,각질제거를 한번에!<br></span>
+                                    <del class="beforeprice">38,000</del>
+                                    <span class="nowprice">14,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                    No.<span class="top10num">8</span>
+                                    </div>
+                                <li>
+                                    <img src="img/top10/top8.jpg" alt="top8">
+                                    <span class="nowname">망고팩 500g 대용량<br></span>
+                                    <span calss="nowinfo">망고추출물 10,000ppm 함유! (모공수축+피부진정+수분탄력+모공청소+각질+노폐물제거+쿨링효과)<br></span>
+                                    <del class="beforeprice">41,000</del>
+                                    <span class="nowprice">38,000</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                    No.<span class="top10num">9</span>
+                                    </div>
+                                <li>
+                                    <img src="img/top10/top9.jpg" alt="top9">
+                                    <span class="nowname">만능 버블토너 1000ml 대용량<br></span>
+                                    <span calss="nowinfo">100%전성분 그린등급! (7스킨법/수분토너/화장수/위치하젤/병풀추출물/유수분밸런스)<br></span>
+                                    <del class="beforeprice">128,000</del>
+                                    <span class="nowprice">26,900</span>원
+                                </li>
+                            </a>
+                        </div>
+                        <div class = "top10menu">
+                            <a href="#">
+                                <div class="top10numbox">
+                                    No.<span class="top10num">10</span>
+                                    </div>
+                                <li>
+                                    <img src="img/top10/top10.jpg" alt="top10">
+                                    <span class="nowname">아크네 클리어 클렌징폼<br></span>
+                                    <span calss="nowinfo">여드름피부 완화 기능성화장품!(지루성피부+환절기피부트러블+입주위+턱뾰루지+볼좁쌀세안제+살리실산+순한딥폼클렌징)<br></span>
+                                    <del class="beforeprice">34,000</del>
+                                    <span class="nowprice">12,900</span>원
+                                </li>
+                            </a>
+                        </div>
+
+                    </ul>
+                </div>
+            </section>
+            <section id="hotdealWrap">
+                <h3>HotDeal</h3>
+            </section>
+        </main>
+        <aside>
+            <div id="banner">
+                <ul>
+                    <li id="bannerlogo">
+                        <a href="#">Logo</a>
+                    </li>
+                    <li id="bannermenu1">
+                        <a href="#">최근 본 상품</a>
+                        <ul>
+                            <li>
+                                <a href="#">최근 본 상품 1
+                                    <dl>
+                                        <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                        <dd class="productname">제품명</dd>
+                                        <dd class="productinfo">제품설명</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">최근 본 상품 2
+                                    <dl>
+                                        <dt class="productimg"><img src="" alt="최근 본 상품 사진2"></dt>
+                                        <dd class="productname">제품명</dd>
+                                        <dd class="productinfo">제품설명</dd>
+
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">최근 본 상품 3
+                                    <dl>
+                                        <dt class="productimg"><img src="" alt="최근 본 상품 사진3"></dt>
+                                        <dd class="productname">제품명</dd>
+                                        <dd class="productinfo">제품설명</dd>
+
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">최근 본 상품 4
+                                    <dl>
+                                        <dt class="productimg"><img src="" alt="최근 본 상품 사진4"></dt>
+                                        <dt class="productname">제품명</dt>
+                                        <dd class="productinfo">제품설명</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="bannermenu2">
+                        <a href="#">장바구니</a>
+                        <ul>
+                            <li>
+                                <a href="#">장바구니 담아 둔 상품1
+                                    <dl>
+                                        <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                        <dd class="productname">제품명</dd>
+                                        <dd class="productinfo">제품설명</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">장바구니 담아 둔 상품2
+                                    <dl>
+                                        <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                        <dd class="productname">제품명</dd>
+                                        <dd class="productinfo">제품설명</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">장바구니 담아 둔 상품3
+                                    <dl>
+                                        <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                        <dd class="productname">제품명</dd>
+                                        <dd class="productinfo">제품설명</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">장바구니 담아 둔 상품4
+                                    <dl>
+                                        <dt class="productimg"><img src="" alt="최근 본 상품 사진1"></dt>
+                                        <dd class="productname">제품명</dd>
+                                        <dd class="productinfo">제품설명</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="bannermenu3">
+                        <a href="#">상담하기</a>
+                    </li>
+                    <li id="bannermenu4">
+                        <a href="#">제일위로</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <footer></footer>
+    </body>
 </html>

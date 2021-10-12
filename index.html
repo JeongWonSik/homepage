@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>네이쳐카인드</title>
         <link rel="stylesheet" href="css/common.css">
+        <script src="/jquery-3.6.0.min.js"></script>
+        <script src="/js/common.js" defer></script>
     </head>
     <body>
         <header id="headerWrap">
@@ -107,29 +109,23 @@
                         </ul>
                     </nav>
                 </section>
-                <div id="sliderWrap">
-                    <ul id="sliderlist">
-                        <li class="headerslider slider1 on">
+                <div id="headersliderWrap">
+                    <ul id="headersliderlist">
+                        <li class="headerslider headerslider1">
                             <a href="#"></a>
                         </li>
-                        <li class="headerslider slider2">
+                        <li class="headerslider headerslider2">
                             <a href="#"></a>
                         </li>
-                        <li class="headerslider slider3">
+                        <li class="headerslider headerslider3">
                             <a href="#"></a>
                         </li>
                     </ul>
-                    <ul id="sliderbutton">
-                        <li>
-                            <a href="#" class="sliderbtn1 on"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="sliderbtn2"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="sliderbtn3"></a>
-                        </li>
-                    </ul>
+                    <div id="headersliderbutton">
+                        <a href="#" class="headersliderbtn1 active"></a>
+                        <a href="#" class="headersliderbtn2"></a>
+                        <a href="#" class="headersliderbtn3"></a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -673,7 +669,9 @@
         <hr>
         <footer>
             <div id="footerlogo">
+                <a href="#">
                 <img src="img/footer/footer_logo.gif" alt="네이쳐카인드하단로고">
+            </a>
             </div>
             <div id= "companyinfo">
                 Company : JS VENTURES CO.,LTD.<br>
@@ -690,24 +688,25 @@
                         <li><a href="#">개인정보처리방침</a></li>
                         <li><a href="#">이용약관</a></li>
                     </ul>
+                    <p>copyright 2021. 정원식 All right reserved.</p>
             </div>
-            <div class="cscenter">
+            <div id="cscenter">
 				<div class="cstitle">고객센터 문의</div>
 				<div class="cscall">070 - 7791 - 0010</div>
 				<div class="csinfo">
-					WORK : MONDAY - FRIDAY<br>
+					<span>WORK</span> : MONDAY - FRIDAY<br>
 					<span>OPEN 10AM / CLOSE 5PM</span><br>
-					LUNCH <span>12:30PM - 1:30PM</span><br>
+					<span>LUNCH 12:30PM - 1:30PM</span><br>
 				</div>
 			</div>
             <div id="postboxWrap">
 				<div id="postbox">배송조회</div>
 				<div id="postinfo">
-				CJ 대한통운 <a href="https://www.doortodoor.co.kr/parcel/pa_004.jsp" target="_blank" id="postboxnum">운송장 조회</a>
+				CJ 대한통운 <a href="https://www.doortodoor.co.kr/parcel/pa_004.jsp" target="_blank" id="postboxnum"> 운송장 조회 </a>
 				</div>
 			</div>
             <div id="companybank">
-				<div class="commpanybanknum">계좌정보</div>
+				<div class="companybanknum">계좌정보</div>
 				<div class="bankinfo">
 				(주)제이에스벤처스<br>
 				<span>기업은행 337-103889-01-011</span>

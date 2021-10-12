@@ -19,11 +19,13 @@ section { width: 100%; height: 100vh;}
     padding: 0 12px; }
 #nav1 ul li a img{display: block; text-align: center;}
 /*로고와 메인 메뉴*/
-#headersection {position: relative;  width: 90%; height: 30px; display: flex; flex-direction: row; padding: 40px 0 0 0;margin: 0 5%; z-index: 9999;}
+#headersection {position: relative;  width: 90%; height: 40px; display: flex; flex-direction: row; padding: 40px 0 0 0;margin: 0 5%; z-index: 9999;}
 #nav2 { width: 100%;}
+#headersection.nav2Wrap { position: fixed; top: -70px; background: rgba(0, 0, 0, 0);
+}
 #TopLogo a{display: block; margin-left:  50px; width: 248px; height: 30px; line-height: 30px;  background-image: url(../img/header/top_logo.png); background-repeat: no-repeat; background-size: 100%; }
 #nav2 ul { margin-left: 10%; }
-#nav2 > ul > li { width: 130px; padding-bottom: 10px; float: left ; height: 30px; overflow: hidden; text-align: center;}
+#nav2 > ul > li { width: 140px; height: 29px; padding-bottom: 10px; float: left ; overflow: hidden; text-align: center;}
 #nav2 > ul > li:first-child {margin: 0 0 0 180px ;}
 #nav2 > ul > li > a {width: 150px; height: 30px; line-height: 30px; font-size: 23px; font-weight: bolder;}
 #nav2 > ul > li:hover {box-sizing: border-box; height: 240px; transition: 0.55s linear;}
@@ -33,12 +35,19 @@ section { width: 100%; height: 100vh;}
 #nav2 > ul > li > ul > li:last-child{ border: 0px;}
 
 /*header slider*/
-#sliderWrap {position: absolute; top: 0; width: 100%; height: 100vh; overflow: hidden;}
-#sliderlist{ width: 300%; height: 100vh;}
+#headersliderWrap {position: absolute; top: 0; width: 100%; height: 100vh; overflow: hidden;}
+#headersliderlist{ width: 300%; height: 100vh;}
 .headerslider > a{display: block; width: 33.3333%; float: left; height: 100vh;}
-.slider1 a{ background-image: url(../img/header/main_img01.jpg);background-repeat: no-repeat;}
-.slider2 a{ background-image: url(../img/header/main_img02.jpg);background-repeat: no-repeat;}
-.slider3 a{ background-image: url(../img/header/main_img03.jpg);background-repeat: no-repeat;}
+.headerslider1 a{ background-image: url(../img/header/main_img01.jpg);background-repeat: no-repeat;}
+.headerslider2 a{ background-image: url(../img/header/main_img02.jpg);background-repeat: no-repeat;}
+.headerslider3 a{ background-image: url(../img/header/main_img03.jpg);background-repeat: no-repeat;}
+
+#headersliderbutton { width: 100px; height: 15px; position: absolute; left: calc(50% - 15px); bottom: 20px; z-index: 999;}
+#headersliderbutton a { display: block; width: 10px; height: 10px;
+            margin: 0 10px; border-radius: 50%; float: left;
+            text-align: center; line-height: 10px;
+            background: #000;}
+#headersliderbutton a.active { background: rgb(255, 255, 255);}
 
 
 /*section 상품통일*/
@@ -106,9 +115,21 @@ section { width: 100%; height: 100vh;}
 #bannermenu4 a { display: block; text-indent: -9999px;height: 60px;}
 
 /*footer 하단*/
-hr {margin: 0 0 100px;}
-footer{width: 80%; margin-left: 10%;}
-#companyinfo {margin-top: 50px; font-size: 14px;}
-#companyinfo2 { width: 350px; height: 50px; background: lightgreen;}
-#companyinfo2 ul { float: left; width: 350px;}
-#companyinfo2 ul li
+hr {margin: 0 0 50px;}
+footer{width: 70%; margin-left: 15%; height: 290px;}
+#companyinfo {margin-top: 0px; font-size: 14px;}
+#companyinfo2 { width: 500px; height: 150px;}
+#companyinfo2 ul { float: left; width: 500px;}
+#companyinfo2 ul li {float: left; margin: 20px 10px 0; font-weight: bolder;}
+#companyinfo2 > p { padding: 100px 5px 0; font-style: oblique;}
+#cscenter { margin-left: 700px; margin-top: -300px;}
+.cstitle {font-weight: 700; font-size: 18px;}
+.cscall {font-weight: 700; font-size: 18px; margin-top: 10px;}
+.csinfo {margin-top: 10px; line-height: 25px;}
+.csinfo span {font-weight: bolder; font-size: 17px;}
+#postboxWrap {margin: 30px 0 0 700px;}
+#postbox{ font-weight: bolder;}
+#postinfo a {margin-left: 5px; padding: 0 5px; border-radius: 5rem; border: 1px solid #000;}
+#companybank {margin: -215px 0 0 1000px}
+.companybanknum { font-weight: bolder; margin-bottom: 10px;}
+.bankinfo > span {font-weight: 600; line-height: 40px;}

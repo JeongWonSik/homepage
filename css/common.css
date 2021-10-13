@@ -4,11 +4,32 @@
 a { text-decoration: none; color: #000;}
 a:hover	{color:#333; text-decoration:none;}
 li { list-style: none;}
-section { width: 100%; height: 100vh;}
+section { width: 100%; height: 77vh;}
 .hidden {text-indent: -9999px; }
+h3{font-family: 'EliceDigitalBaeum_Bold';}
+/*font*/
+@font-face {
+    font-family: 'HSGaeulSenggak20';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSGaeulSenggak20.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* header */
 #headerWrap { width: 100%;  height: 100vh; z-index: 1;}
 /*상단 로그인 메뉴*/
+#nav1 h2{text-indent: -9999px;}
 #nav1 {margin-left: 60%;  padding-top: 10px; position: relative; z-index: 9999;font-size: 13px;  width: 600px; height: 30px;}
 #nav1 ul { display: flex;}
 #nav1 ul li{height: 30px;}
@@ -25,22 +46,57 @@ section { width: 100%; height: 100vh;}
 }
 #TopLogo a{display: block; margin-left:  50px; width: 248px; height: 30px; line-height: 30px;  background-image: url(../img/header/top_logo.png); background-repeat: no-repeat; background-size: 100%; }
 #nav2 ul { margin-left: 10%; }
+#nav2 h2 { text-indent: -9999px;}
 #nav2 > ul > li { width: 140px; height: 29px; padding-bottom: 10px; float: left ; overflow: hidden; text-align: center;}
 #nav2 > ul > li:first-child {margin: 0 0 0 180px ;}
-#nav2 > ul > li > a {width: 150px; height: 30px; line-height: 30px; font-size: 23px; font-weight: bolder;}
+#nav2 > ul > li > a {width: 150px; height: 30px; line-height: 30px; font-size: 23px; font-weight: bolder;
+                    font-family: 'HSGaeulSenggak20';}
+#nav2 > ul > li > a:hover {color: rgba(0,0,0,0.3)}
 #nav2 > ul > li:hover {box-sizing: border-box; height: 240px; transition: 0.55s linear;}
 
+
 #nav2 > ul > li > ul { margin-top: 10px;background:rgba(255,255,255,1); border:1px solid rgba(0,0,0,0.2);border-radius: 0 0 25% 25%;}
-#nav2 > ul > li > ul > li{border-bottom:1px solid rgba(0,0,0,0.2); font-size: 15px; padding: 3px 0;}
+#nav2 > ul > li > ul > li{border-bottom:1px solid rgba(0,0,0,0.2); font-size: 15px; padding: 3px 0;
+                            font-family: 'HSGaeulSenggak20';}
 #nav2 > ul > li > ul > li:last-child{ border: 0px;}
 
 /*header slider*/
 #headersliderWrap {position: absolute; top: 0; width: 100%; height: 100vh; overflow: hidden;}
 #headersliderlist{ width: 300%; height: 100vh;}
 .headerslider > a{display: block; width: 33.3333%; float: left; height: 100vh;}
-.headerslider1 a{ background-image: url(../img/header/main_img01.jpg);background-repeat: no-repeat;}
-.headerslider2 a{ background-image: url(../img/header/main_img02.jpg);background-repeat: no-repeat;}
-.headerslider3 a{ background-image: url(../img/header/main_img03.jpg);background-repeat: no-repeat;}
+.headerslider1 a{position: relative; background-image: url(../img/header/main_img011.jpg);background-repeat: no-repeat;}
+#img1text1 { position: absolute; top: 33%; left: 50%;}
+#img1text1 > p {font-size: 70px; text-align: center; color: rgb(110, 25, 10);}
+#img1text1 > p > span{font-size: 70px; font-weight: 900; color: rgb(110, 25, 10);}
+#img1text1 > p:nth-child(2) {font-size: 100px; font-style: oblique; font-family:'InkLipquid';color: rgba(165, 42, 42, 0.61);}
+#img1text2{font-size: 20px; border-top: 1px solid black; border-bottom: 1px solid black; font-weight: 600; 
+            margin: 2px; text-align: center; margin-left: 15%; width: 450px; height: 50px; line-height: 50px;}
+#img1text3 { margin-left: 33%; width: 200px; height: 200px; line-height: 200px; font-size: 30px; text-align: center; font-weight: 600;}
+
+.headerslider2 a{ position: relative; background-image: url(../img/header/main_img022.jpg);background-repeat: no-repeat;}
+#img2text1 { position: absolute; top: 35%; left: 50%;}
+#img2text1 > p {font-size: 70px; text-align: center;  color: rgb(2, 31, 2);}
+#img2text1 > p > span{font-size: 70px; font-weight: 900; color: rgb(2, 31, 2);}
+#img2text1 > p:nth-child(2) {font-size: 100px; font-style: oblique; font-family: 'InkLipquid'; color:rgb(10, 54, 10)}
+#img2text2{font-size: 20px; border-top: 1px solid black; border-bottom: 1px solid black; font-weight: 600;
+            margin: 2px; text-align: center; margin-left: 15%; width: 450px; height: 50px; line-height: 50px;}
+#img2text3 { margin-left: 33%; width: 200px; height: 200px; line-height: 200px; font-size: 30px; text-align: center; font-weight: 600;}
+.headerslider3 a{ position: relative; background-image: url(../img/header/main_img033.jpg);background-repeat: no-repeat;}
+#img3text1 { position: absolute; top: 35%; left: 50%;}
+#img3text1 > p {font-size: 70px; text-align: center; color: rgb(8, 8, 44);}
+#img3text1 > p > span{font-size: 70px; font-weight: 900; color: rgb(8, 8, 44);}
+#img3text1 > p:nth-child(2) {font-size: 100px; font-style: oblique; font-family: 'InkLipquid'; color: rgb(29, 101, 160);}
+#img3text2{font-size: 20px; border-top: 1px solid black; border-bottom: 1px solid black; font-weight: 600;
+            margin: 2px; text-align: center; margin-left: 15%; width: 450px; height: 50px; line-height: 50px;}
+#img3text3 { margin-left: 33%; width: 200px; height: 200px; line-height: 200px; font-size: 30px; text-align: center; font-weight: 600;}
+
+#headerbtnWrap a { position: absolute; top: 48%;
+    width: 30px; height: 70px;
+    text-align: center; line-height: 30px; font-size: 70px; font-weight: bolder;
+    color: #fff; }
+#headerbtnWrap a:hover { font-size: 100px; color: mediumaquamarine; transition:0.5s;}
+#headerbtnWrap .leftbtn { left: 300px;  }
+#headerbtnWrap .rightbtn { right: 300px; }
 
 #headersliderbutton { width: 100px; height: 15px; position: absolute; left: calc(50% - 15px); bottom: 20px; z-index: 999;}
 #headersliderbutton a { display: block; width: 10px; height: 10px;
@@ -57,56 +113,73 @@ section { width: 100%; height: 100vh;}
 .nowprice{font-size: 16px; font-weight: bold;}
 
 /*section1 신상*/
-#newproductpage {width: 100%; height: 100vh; position: relative;}
+#newproductpage {width: 100%; height: 77vh; position: relative;}
 #newproductpage h3 {position: absolute; top: 50px; left: calc(50% - 75px); font-size: 50px;}
 #newproductWrap {width: 1240px; height: 50vh; position: absolute; top: 150px; left: calc(50% - 600px);}
-#newproductlist { height: 410px; border: 1px solid #000; display: flex; overflow: hidden;}
+#newproductlist { height: 440px; border: 1px solid #000; display: flex; overflow: hidden;}
 .newmenu {margin: 5px 20px; width: 270px; height: 410px; text-align: center; float: left;}
 .newnumbox {width: 50px; background: rgba(255, 0, 0, 0.6); color: white; float: left; line-height: 25px;}
 .newnum {width: 25px; height: 25px; font-weight: bolder; font-size: large;}
 .newmenu a { height: 380px; }
 .newmenu > a > img{width: 268px; height: 248px;}
+#newproductbtn  span { position: absolute; top: 48%; width: 30px; height: 70px; text-align: center; line-height: 30px; font-size: 70px; font-weight: bolder; color: rgba(255, 0, 0, 0.2); }
+#newproductbtn .section1leftbtn { left: 200px; }
+#newproductbtn .section1rightbtn { right: 200px; }
+#newproductbtn span:hover { color: aquamarine; transition: 0.5s; cursor: pointer;}
 
 /*section2 top 10*/
-#top10page{width: 100%; height: 100vh; position: relative; }
+#top10page{width: 100%; height: 77vh; position: relative; }
 #top10page h3 {position: absolute; top: 50px; left: calc(50% - 75px); font-size: 50px;}
 #top10Wrap { width: 1240px; height: 50vh; position: absolute; top: 150px; left: calc(50% - 600px);}
-#top10list { height: 410px; border: 1px solid #000; display: flex; overflow: hidden;}
+#top10list { height: 440px; border: 1px solid #000; display: flex; overflow: hidden;}
 .top10menu {margin: 5px 20px; width: 270px; height: 410px; text-align: center; float: left;}
 .top10numbox {width: 50px; background: rgba(255, 0, 0, 0.6); color: white; float: left; line-height: 25px;}
 .top10num {width: 25px; height: 25px; font-weight: bolder; font-size: large;}
 .top10menu a { height: 380px; }
 .top10menu > a > img{width: 268px; height: 248px;}
+#top10productbtn  span { position: absolute; top: 48%; width: 30px; height: 70px; text-align: center; line-height: 30px; font-size: 70px; font-weight: bolder; color: rgba(255, 0, 0, 0.2); }
+#top10productbtn .section2leftbtn { left: 200px; }
+#top10productbtn .section2rightbtn { right: 200px; }
+#top10productbtn span:hover { color: aquamarine; transition: 0.5s; cursor: pointer;}
 
 /*section3 hotdeal*/
-#hotdealpage{width: 100%; height: 100vh; position: relative; }
+#hotdealpage{width: 100%; height: 77vh; position: relative; }
 #hotdealpage h3 {position: absolute; top: 50px; left: calc(50% - 75px); font-size: 50px;}
 #hotdealWrap { width: 1240px; height: 50vh; position: absolute; top: 150px; left: calc(50% - 600px);}
-#hotdeallist { height: 410px; border: 1px solid #000; display: flex; overflow: hidden;}
+#hotdeallist { height: 440px; border: 1px solid #000; display: flex; overflow: hidden;}
 .hotdealmenu {margin: 5px 20px; width: 270px; height: 410px; text-align: center; float: left;}
 .hotdealnumbox {width: 50px; background: rgba(255, 0, 0, 0.6); color: white; float: left; line-height: 25px;}
 .hotdealnum {width: 25px; height: 25px; font-weight: bolder; font-size: large;}
 .hotdealmenu a { height: 380px; }
 .hotdealmenu > a > img{width: 268px; height: 248px;}
-
+#hotdealproductbtn  span { position: absolute; top: 48%; width: 30px; height: 70px; text-align: center; line-height: 30px; font-size: 70px; font-weight: bolder; color: rgba(255, 0, 0, 0.2); }
+#hotdealproductbtn .section3leftbtn { left: 200px; }
+#hotdealproductbtn .section3rightbtn { right: 200px; }
+#hotdealproductbtn span:hover { color: aquamarine; transition: 0.5s; cursor: pointer;}
 
 
 
 /*aside 배너*/
-#banner { width: 70px; height: 300px; background: #fff; border-radius: 10%;
-    position:absolute; top: 500px; right: 2px; overflow: hidden;
-}
+
+.asideproductimg > img{width: 200px; height: 200px;}
+.asideproductname {font-weight: 600; font-size: 14px;}
+.asideproductinfo {font-size: 12px;}
+#bannerWrap > h3 { text-indent: -9999px;}
+#bannerWrap {position: absolute; top: 300px; right: 1px; width: 70px; height: 850px; overflow: hidden; }
+#banner > ul {width: 70px; height: 300px; background: #fff; border-radius: 10%; top: 0; right: 0;}
 /*logo*/
 #bannerlogo { height: 60px; background-image: url(../img/banner/top_logo.png); background-repeat: no-repeat ;background-size: 70%; background-position: center;}
 #banner ul:nth-child(1) > li:nth-child(1) > a{display: block; text-indent: -9999px; height: 25%;}
+#banner > ul > li > a:hover{background-color: rgba(255, 255, 255, 0.5);} 
 /*최근본상품*/
 #bannermenu1 {height: 60px; background-image: url(../img/banner/see.jpg); background-repeat: no-repeat ;background-size: 100%; background-position-y: center;}
 #bannermenu1 > a{display: block; text-indent: -9999px;height: 60px;}
-#bannermenu1 > ul li {position: absolute; left: 100%;}
+#bannermenu1 > ul {position:absolute; top: -300px; left: 70px; width: 320px; height: 850px; background-color: white;}
+#bannermenu1 > ul > li {margin-top: 5px; margin-left: 5px; width: 250px; height: 270px; text-align: center; }
+#bannermenu1 > ul > li > a{ font-size: 12px;}
 /*장바구니*/
 #bannermenu2 {height: 60px; background-image: url(../img/banner/cart1.jpg); background-repeat: no-repeat ;background-size: 70%; background-position: center;}
 #bannermenu2 > a{display: block; text-indent: -9999px;height: 60px;}
-#bannermenu2 > ul li {position: absolute; left: 100%;}
 /*상담하기*/
 #bannermenu3 {height: 60px; background-image: url(../img/banner/문의하기.jpg); background-repeat: no-repeat ;background-size: 60%; background-position: center;}
 #bannermenu3 a { display: block; text-indent: -9999px;height: 60px;}
